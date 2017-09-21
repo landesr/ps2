@@ -21,9 +21,13 @@ public class MyInteger {
 	}
 	
 	public boolean isPrime() {
-		if (iValue == 0||iValue == 1||iValue==2) {
+		if (iValue == 0||iValue == 1) {
 			return false;
-		} else {
+		}
+		else if(iValue==2) {
+			return true;
+		}
+		else {
 			for (int i = 2; i < iValue; i++) {
 				if (iValue%i == 0) {
 					return false;
